@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>dscp_homework1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>pg100</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7511,74 +7511,206 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=828dd4ae">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d6dec467">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="DSCP-Homework-1">DSCP Homework 1<a class="anchor-link" href="#DSCP-Homework-1">¶</a></h1><h2 id="Problem">Problem<a class="anchor-link" href="#Problem">¶</a></h2><p>The data in <font face="courier new" style="color:red">dist.csv</font> gives the distances between 11 locations in kilometers.  The file has 11 rows, each with 11 elements.  Input these data into a list of lists following these guidelines:</p>
-<ul>
-<li>Denote the list of lists with the variable name <font face="courier new">dist</font></li>
-<li>The list of lists should have 11 sublists.  Each sublist should contain 11 elements from one row of the input file.</li>
-<li>Use <font face="courier new" style="color:green">for</font> loops to accomplish this task.</li>
-<li>Convert the data elements to a <font face="courier new" style="color:red">numerical data type</font> using the most appropriate data type for the data you view in the file.</li>
-<li>Leave the <font face="courier" style="color:green">print</font> statement that has already been provided.</li>
-</ul>
-<h2 id="Directions">Directions<a class="anchor-link" href="#Directions">¶</a></h2><ul>
-<li>Feel free to use extra cells for experimentation and prototyping your solutions but <b><i>please comment out all statements that print out data that are not solutions</i></b> prior to submission.</li>
-<li>There are multiple ways to achieve the same end goal</li>
-<li>You can use <a href="https://colab.research.google.com">Google Colab</a> if you don't have Jupyter Notebook installed</li>
-<li>Submit the .ipynb file to Moodle</li>
-</ul>
-<h2 id="Hints">Hints<a class="anchor-link" href="#Hints">¶</a></h2><ul>
-<li>Use <font face="courier new" style="color:green">open()</font> to open a file</li>
-<li>Use <font face="courier new" style="color:green">.read()</font> or <font face="courier new" style="color:green">.readlines()</font> to read data</li>
-<li>Use <font face="courier new" style="color:green">.close()</font> to close a file</li>
-<li>Use <font face="courier new" style="color:green">len()</font> to get the length of a list</li>
-<li>Use <font face="courier new" style="color:green">range()</font> to control the number of iterations</li>
-<li>Use <font face="courier new" style="color:green">.strip()</font> to remove leading and trailing whitespaces</li>
-<li>Use <font face="courier new" style="color:green">.split()</font> with appropriate delimeter to split strings</li>
-<li>Use <font face="courier new">[]</font>  for list indexing</li>
-<li>Use <i><font face="courier new" style="color:#008B8B">#</font></i> to comment out code</li>
-</ul>
-<p><b>The final print function should return something like this:</b></p>
-<p>[[0.0, 18.4, 8.9, 17.0, 12.4, 13.4, 20.1, 15.3, 3.0, 13.6, 11.2], [18.4, 0.0, 9.5, 7.0, 14.9, 5.1, 13.6, 4.5, 17.5, 6.1, 12.4], [8.9, 9.5, 0.0, 9.8, 9.4, 4.5, 14.0, 7.1, 8.1, 5.0, 6.7], [17.0, 7.0, 9.8, 0.0, 18.4, 7.8, 19.7, 3.6, 17.3, 10.0, 15.6], [12.4, 14.9, 9.4, 18.4, 0.0, 10.8, 8.5, 15.0, 9.5, 8.9, 2.8], [13.4, 5.1, 4.5, 7.8, 10.8, 0.0, 12.4, 4.2, 12.4, 2.2, 8.1], [20.1, 13.6, 14.0, 19.7, 8.5, 12.4, 0.0, 16.2, 17.5, 10.2, 8.9], [15.3, 4.5, 7.1, 3.6, 15.0, 4.2, 16.2, 0.0, 15.0, 6.4, 12.2], [3.0, 17.5, 8.1, 17.3, 9.5, 12.4, 17.5, 15.0, 0.0, 12.1, 8.6], [13.6, 6.1, 5.0, 10.0, 8.9, 2.2, 10.2, 6.4, 12.1, 0.0, 6.3], [11.2, 12.4, 6.7, 15.6, 2.8, 8.1, 8.9, 12.2, 8.6, 6.3, 0.0]]</p>
+<h1 id="pg100.txt">pg100.txt<a class="anchor-link" href="#pg100.txt">¶</a></h1>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dbd2addf">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f8db8e7f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Let's-turn-all-the-words-in-pg100.txt-into-lowercase-and-save-the-data-in-list-of-lists-format-where-each-sublist-represents-a-line">Let's turn all the words in pg100.txt into lowercase and save the data in list of lists format where each sublist represents a line<a class="anchor-link" href="#Let's-turn-all-the-words-in-pg100.txt-into-lowercase-and-save-the-data-in-list-of-lists-format-where-each-sublist-represents-a-line">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5ee8fdf1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">dist</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"dist.csv"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">d</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">','</span><span class="p">)</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">line</span><span class="p">]</span>
-        <span class="n">dist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Open and read the file</span>
+<span class="c1"># Here's a list of available encodings in python3.10</span>
+    <span class="c1"># but of course the list might change by end of the semester in upcoming updates</span>
+<span class="c1"># https://docs.python.org/3.10/library/codecs.html#standard-encodings</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"pg100.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8-sig"</span><span class="p">)</span> <span class="c1"># In this case we use "utf-8-sig" encoding</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d296ef61">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[[0.0, 18.4, 8.9, 17.0, 12.4, 13.4, 20.1, 15.3, 3.0, 13.6, 11.2], [18.4, 0.0, 9.5, 7.0, 14.9, 5.1, 13.6, 4.5, 17.5, 6.1, 12.4], [8.9, 9.5, 0.0, 9.8, 9.4, 4.5, 14.0, 7.1, 8.1, 5.0, 6.7], [17.0, 7.0, 9.8, 0.0, 18.4, 7.8, 19.7, 3.6, 17.3, 10.0, 15.6], [12.4, 14.9, 9.4, 18.4, 0.0, 10.8, 8.5, 15.0, 9.5, 8.9, 2.8], [13.4, 5.1, 4.5, 7.8, 10.8, 0.0, 12.4, 4.2, 12.4, 2.2, 8.1], [20.1, 13.6, 14.0, 19.7, 8.5, 12.4, 0.0, 16.2, 17.5, 10.2, 8.9], [15.3, 4.5, 7.1, 3.6, 15.0, 4.2, 16.2, 0.0, 15.0, 6.4, 12.2], [3.0, 17.5, 8.1, 17.3, 9.5, 12.4, 17.5, 15.0, 0.0, 12.1, 8.6], [13.6, 6.1, 5.0, 10.0, 8.9, 2.2, 10.2, 6.4, 12.1, 0.0, 6.3], [11.2, 12.4, 6.7, 15.6, 2.8, 8.1, 8.9, 12.2, 8.6, 6.3, 0.0]]
-</pre>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Observe the data that we just read in</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=10866733">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Looking at line 2022, we can see that the string contains leading whitespaces and trailing whitespaces('\n')</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e0fae398">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The strip function can help us remove both leading and trailing whitespaces</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5fc54604">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># In case you need to only remove leading whitespaces, use the left strip function .lstrip()</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a4372960">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Conversely, to only remove trailing whitespaces, use the right strip function .rstrip()</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dc434be9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># After removing the whitespaces, we can split the string into smaller pieces using the split function .split()</span>
+    <span class="c1"># no delimiter argument needed in this case because the default setting is spaces</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=445825c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For better understanding, let's save the list in a variable </span>
+<span class="n">data2022</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2022</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">data2022</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c8d787b3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># List elements are mutable, so we can apply the lower case function .lower to the elements of the string one by one</span>
+    <span class="c1"># and replace the original elements with the ones that are in lower case</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data2022</span><span class="p">)):</span>
+    <span class="n">data2022</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">data2022</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">data2022</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6dfb3ace">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Remember that we only turned the (2022-1)th row of the data (Python counts from 0) into a lower cased word by word list</span>
+    <span class="c1"># if we would like to apply the same method to all 124,787 lines of the data,</span>
+    <span class="c1"># we will need to do it 124,787 times</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1766d511">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Here, we implement another for loop to accomplish the goal</span>
+    <span class="c1"># len(data[i]) varies by how many words are there in the (i)th line</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="n">data</span>
+</pre></div>
 </div>
 </div>
 </div>
